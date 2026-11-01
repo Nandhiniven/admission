@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="faceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Circle with Soft Glow -->
+  <circle cx="50" cy="50" r="48" fill="url(#bgGrad)"/>
+  <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  
+  <!-- Robot Antenna -->
+  <line x1="50" y1="26" x2="50" y2="16" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="50" cy="14" r="5" fill="#f59e0b"/>
+  <circle cx="50" cy="14" r="2.5" fill="#ffffff"/>
+
+  <!-- Robot Head -->
+  <rect x="24" y="26" width="52" height="42" rx="14" fill="url(#faceGrad)" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Ears / Audio sensors -->
+  <rect x="18" y="38" width="6" height="18" rx="3" fill="#cbd5e1"/>
+  <rect x="76" y="38" width="6" height="18" rx="3" fill="#cbd5e1"/>
+
+  <!-- Screen / Visor -->
+  <rect x="30" y="33" width="40" height="26" rx="8" fill="#0f172a"/>
+  
+  <!-- Glowing Eyes -->
+  <circle cx="42" cy="45" r="5" fill="#38bdf8"/>
+  <circle cx="43.5" cy="43.5" r="1.5" fill="#ffffff"/>
+  <circle cx="58" cy="45" r="5" fill="#38bdf8"/>
+  <circle cx="59.5" cy="43.5" r="1.5" fill="#ffffff"/>
+
+  <!-- Friendly Smile in Screen -->
+  <path d="M44 51 Q50 56 56 51" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Graduation Cap on Robot -->
+  <path d="M50 18 L76 25 L50 32 L24 25 Z" fill="#1e293b"/>
+  <path d="M38 29 V34 C38 36.5 50 38.5 50 38.5 C50 38.5 62 36.5 62 34 V29" fill="none" stroke="#1e293b" stroke-width="2"/>
+  <path d="M72 26 V35" stroke="#f59e0b" stroke-width="1.8" stroke-linecap="round"/>
+  <circle cx="72" cy="36" r="2" fill="#f59e0b"/>
+
+  <!-- Robot Collar / Shoulders -->
+  <path d="M32 72 Q50 68 68 72 L74 88 Q50 94 26 88 Z" fill="#ffffff" opacity="0.9"/>
+  <!-- University Crest on Chest -->
+  <path d="M50 74 L55 77 V82 C55 85 50 87 50 87 C50 87 45 85 45 82 V77 Z" fill="#2563eb"/>
+</svg>

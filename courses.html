@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Academic Courses & Programs at Apex Institute of Technology & Management - B.Tech, BCA, MCA, MBA, M.Tech.">
+  <title>Courses & Academic Programs | Apex Institute of Technology & Management</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span class="demo-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Project Demo</span>
+        <div class="top-bar-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>Admission Helpline: <a href="tel:+9118002468000">1800-246-8000</a></span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <div class="top-bar-item">
+          <i class="fa-solid fa-award"></i>
+          <span>NAAC 'A++' Accredited | AICTE & UGC Approved</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Site Header -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Apex Institute Homepage">
+        <img src="assets/images/logo.svg" alt="AITM University Shield Logo">
+        <div class="brand-text-wrap">
+          <span class="brand-title">APEX UNIVERSITY</span>
+          <span class="brand-subtitle">Institute of Technology & Management</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="courses.html" class="nav-link active">Courses</a>
+        <a href="admission.html" class="nav-link">Admission</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="btn btn-purple btn-sm" onclick="window.openChatWithQuery('What courses are available?')">
+          <i class="fa-solid fa-robot"></i> Chat Assistant
+        </button>
+        <a href="admission.html#enquiry-form" class="btn btn-primary btn-sm">
+          <i class="fa-solid fa-paper-plane"></i> Apply Now
+        </a>
+      </div>
+
+      <button type="button" class="mobile-toggle-btn" id="mobile-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); color: #ffffff; padding: 4rem 0; text-align: center;">
+    <div class="container">
+      <span class="section-subtitle" style="background: rgba(255, 255, 255, 0.2); color: #ffffff;">ACADEMIC CATALOG 2026-27</span>
+      <h1 style="color: #ffffff; font-size: 2.85rem; margin: 0.5rem 0 1rem 0;">Explore Our Degree Programs</h1>
+      <p style="color: #dbeafe; max-width: 680px; margin: 0 auto; font-size: 1.1rem;">
+        Discover industry-aligned Undergraduate and Postgraduate degrees engineered for tomorrow's technology, computing, and executive leadership roles.
+      </p>
+    </div>
+  </section>
+
+  <!-- Courses Catalog Section -->
+  <section class="section-padding">
+    <div class="container">
+
+      <!-- Search & Category Filters -->
+      <div class="course-controls">
+        <div class="course-search-wrapper">
+          <i class="fa-solid fa-magnifying-glass course-search-icon"></i>
+          <input 
+            type="text" 
+            class="course-search-input" 
+            id="course-search-input" 
+            placeholder="Search courses by name (e.g. AI, CSE, MBA, MCA)..." 
+            aria-label="Search courses"
+          >
+        </div>
+
+        <div class="course-filter-tabs">
+          <button type="button" class="filter-tab-btn active" data-category="all">All Disciplines</button>
+          <button type="button" class="filter-tab-btn" data-category="computing">Computing & AI</button>
+          <button type="button" class="filter-tab-btn" data-category="engineering">Engineering</button>
+          <button type="button" class="filter-tab-btn" data-category="management">Management & Commerce</button>
+          <button type="button" class="filter-tab-btn" data-category="pg">Postgraduate (PG)</button>
+        </div>
+      </div>
+
+      <!-- Courses Grid -->
+      <div class="courses-grid" id="courses-grid">
+
+        <!-- 1. B.Tech CSE -->
+        <article class="course-card" data-category="computing">
+          <div class="course-card-header">
+            <div class="course-badges-row">
+              <span class="course-level-badge level-ug">Undergraduate</span>
+              <span class="course-duration-badge"><i class="fa-regular fa-clock"></i> 4 Years (8 Sem)</span>
+            </div>
+            <h3 class="course-title">B.Tech in Computer Science & Engineering (CSE)</h3>
+          </div>
+          <div class="course-card-body">
+            <p class="course-description">
+              In-depth coverage of algorithms, data structures, operating systems, cloud computing, database engineering, and modern DevOps pipelines.
+            </p>
+            <div class="course-meta-list">
+              <div class="course-meta-item">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div><strong>Eligibility:</strong> 10+2 with PCM minimum 60% aggregate.</div>
+              </div>
+              <div class="course-meta-item">
+                <i class="fa-solid fa-building-columns"></i>
+                <div><strong>Entrance:</strong> JEE Main / State CET / AITMET</div>
+              </div>
+              <div class="course-meta-item">
+                <i class="fa-solid fa-briefcase"></i>
+                <div><strong>Career Roles:</strong> Software Architect, Full-Stack Engineer, Cloud Developer.</div>
+              </div>
+            </div>
+          </div>
+          <div class="course-card-footer">
+            <div class="course-fee-wrap">
+              <span class="course-fee-label">Annual Tuition</span>
+              <span class="course-fee-val">₹1,45,000</span>
+            </div>
+            <div class="course-actions">
+              <button type="button" class="btn btn-outline btn-sm btn-ask-bot" data-bot-query="What is the fee and cutoff for B.Tech Computer Science?">
+                <i class="fa-solid fa-robot"></i> Ask Bot
+              </button>
+              <a href="admission.html?course=cse" class="btn btn-primary btn-sm">Apply</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. B.Tech AI & ML -->
+        <article class="course-card" data-category="computing">
+          <div class="course-card-header">
+            <div class="course-badges-row">
+              <span class="course-level-badge level-ug">Undergraduate</span>
+              <span class="course-duration-badge"><i class="fa-regular fa-clock"></i> 4 Years (8 Sem)</span>
+            </div>
+            <h3 class="course-title">B.Tech in Artificial Intelligence & Machine Learning</h3>
+          </div>
+          <div class="course-card-body">
+            <p class="course-description">
+              Specialized engineering degree covering Neural Networks, Deep Learning, Natural Language Processing, Computer Vision, and Generative AI systems.
+            </p>
+            <div class="course-meta-list">
+              <div class="course-meta-item">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div><strong>Eligibility:</strong> 10+2 with PCM minimum 60% aggregate.</div>
+              </div>
+              <div class="course-meta-item">
+                <i class="fa-solid fa-building-columns"></i>
+                <div><strong>Entrance:</strong> JEE Main / State CET / AITMET</div>
+              </div>
+              <div class="course-meta-item">
+                <i class="fa-solid fa-briefcase"></i>
+                <div><strong>Career Roles:</strong> AI Engineer, ML Specialist, Data Scientist.</div>
+              </div>
+            </div>
+          </div>
+          <div class="course-card-footer">
+            <div class="course-fee-wrap">
+              <span class="course-fee-label">Annual Tuition</span>
+              <span class="course-fee-val">₹1,55,000</span>
+            </div>
+            <div class="course-actions">
+              <button type="button" class="btn btn-outline btn-sm btn-ask-bot" data-bot-query="Tell me about B.Tech AI & ML labs, syllabus and placements">
+                <i class="fa-solid fa-robot"></i> Ask Bot
+              </button>
+              <a href="admission.html?course=aiml" class="btn btn-primary btn-sm">Apply</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. B.Tech Data Science -->
+        <article class="course-card" data-category="computing">
+          <div class="course-card-header">
+            <div class="course-badges-row">
+              <span class="course-level-badge level-ug">Undergraduate</span>
+              <span class="course-duration-badge"><i class="fa-regular fa-clock"></i> 4 Years (8 Sem)</span>
+            </div>
+            <h3 class="course-title">B.Tech in Data Science & Big Data Analytics</h3>
+          </div>
+          <div class="course-card-body">
+            <p class="course-description">
+              Covers predictive analytics, Apache Spark, Hadoop, statistical modeling, data visualization, business intelligence, and real-time streaming data.
+            </p>
+            <div class="course-meta-list">
+              <div class="course-meta-item">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div><strong>Eligibility:</strong> 10+2 with PCM minimum 60% aggregate.</div>
+              </div>
+              <div class="course-meta-item">
+                <i class="fa-solid fa-building-columns"></i>
+                <div><strong>Entrance:</strong> JEE Main / State CET / AITMET</div>
+              </div>
+              <div class="course-meta-item">
+                <i class="fa-solid fa-briefcase"></i>
+                <div><strong>Career Roles:</strong> Big Data Engineer, BI Analyst, Quantitative Modeler.</div>
+              </div>
+            </div>
+          </div>
+          <div class="course-card-footer">
+            <div class="course-fee-wrap">
+              <span class="course-fee-label">Annual Tuition</span>
+              <span class="course-fee-val">₹1,50,000</span>
+            </div>
+            <div class="course-actions">
+              <button type="button" class="btn btn-outline btn-sm btn-ask-bot" data-bot-query="What is the fee and career scope in Data Science?">
+                <i class="fa-solid fa-robot"></i> Ask Bot
+              </button>
+              <a href="admission.html?course=datascience" class="btn btn-primary btn-sm">Apply</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. BCA -->
+        <article class="course-card" data-category="computing">
+          <div class="course-card-header">
+            <div class="course-badges-row">
+              <span class="course-level-badge level-ug">Undergraduate</span>
+              <span class="course-duration-badge"><i class="fa-regular fa-clock"></i> 3 Years (6 Sem)</span>
+            </div>
+            <h3 class="course-title">Bachelor of Computer Applications (BCA)</h3>
+          </div>
+          <div class="course-card-body">
+            <p class="course-description">
+              Fast-track application development program emphasizing modern JavaScript, Python, database design, web application engineering, and UI/UX design.
+            </p>
+            <div class="course-meta-list">
+              <div class="course-meta-item">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div><strong>Eligibility:</strong> 10+2 Any stream with Math/IT (Min 50%).</div>
+              </div>
+              <div class="course-meta-item">
+                <i class="fa-solid fa-building-columns"></i>
+                <div><strong>Entrance:</strong> Merit Based / AITMET</div>
+              </div>
+              <div class="course-meta-item">
+                <i class="fa-solid fa-briefcase"></i>
+                <div><strong>Career Roles:</strong> Frontend Developer, App Developer, Database Admin.</div>
+              </div>
+            </div>
+          </div>
+          <div class="course-card-footer">
+            <div class="course-fee-wrap">
+              <span class="course-fee-label">Annual Tuition</span>
+              <span class="course-fee-val">₹85,000</span>
+            </div>
+            <div class="course-actions">
+              <button type="button" class="btn btn-outline btn-sm btn-ask-bot" data-bot-query="Tell me about BCA course eligibility, fee and syllabus">
+                <i class="fa-solid fa-robot"></i> Ask Bot
+              </button>
+              <a href="admission.html?course=bca" class="btn btn-primary btn-sm">Apply</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. MCA (PG) -->
+        <article class="course-card" data-category="pg">
+          <div class="course-card-header">
+            <div class="course-badges-row">
+              <span class="course-level-badge level-pg">Postgraduate</span>
+              <span class="course-duration-badge"><i class="fa-regular fa-clock"></i> 2 Years (4 Sem)</span>
+            </div>
+            <h3 class="course-title">Master of Computer Applications (MCA)</h3>
+          </div>
+          <div class="course-card-body">
+            <p class="course-description">
+              Advanced computing program featuring enterprise cloud solutions, cybersecurity architecture, mobile app ecosystems, and AI system design.
+            </p>
+            <div class="course-meta-list">
+              <div class="course-meta-item">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div><strong>Eligibility:</strong> BCA / B.Sc IT or Graduate with Math (Min 50%).</div>
+              </div>
+              <div class="course-meta-item">
+                <i class="fa-solid fa-building-columns"></i>
+                <div><strong>Entrance:</strong> State CET / AITMET</div>
+              </div>
+              <div class="course-meta-item">
+                <i class="fa-solid fa-briefcase"></i>
+                <div><strong>Career Roles:</strong> Senior Software Engineer, Systems Architect, Cyber Analyst.</div>
+              </div>
+            </div>
+          </div>
+          <div class="course-card-footer">
+            <div class="course-fee-wrap">
+              <span class="course-fee-label">Annual Tuition</span>
+              <span class="course-fee-val">₹1,10,000</span>
+            </div>
+            <div class="course-actions">
+              <button type="button" class="btn btn-outline btn-sm btn-ask-bot" data-bot-query="What is the admission procedure and fee for MCA?">
+                <i class="fa-solid fa-robot"></i> Ask Bot
+              </button>
+              <a href="admission.html?course=mca" class="btn btn-primary btn-sm">Apply</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. MBA (PG & Management) -->
+        <article class="course-card" data-category="management pg">
+          <div class="course-card-header">
+            <div class="course-badges-row">
+              <span class="course-level-badge level-pg">Postgraduate</span>
+              <span class="course-duration-badge"><i class="fa-regular fa-clock"></i> 2 Years (4 Sem)</span>
+            </div>
+            <h3 class="course-title">Master of Business Administration (MBA)</h3>
+          </div>
+          <div class="course-card-body">
+            <p class="course-description">
+              Dual specialization options in Business Analytics, FinTech, Digital Marketing, Human Resources, and Global Supply Chain Management.
+            </p>
+            <div class="course-meta-list">
+              <div class="course-meta-item">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div><strong>Eligibility:</strong> Graduation in any discipline with min 50%.</div>
+              </div>
+              <div class="course-meta-item">
+                <i class="fa-solid fa-building-columns"></i>
+                <div><strong>Entrance:</strong> CAT / MAT / CMAT / AITMAT</div>
+              </div>
+              <div class="course-meta-item">
+                <i class="fa-solid fa-briefcase"></i>
+                <div><strong>Career Roles:</strong> Management Consultant, Product Manager, Investment Banker.</div>
+              </div>
+            </div>
+          </div>
+          <div class="course-card-footer">
+            <div class="course-fee-wrap">
+              <span class="course-fee-label">Annual Tuition</span>
+              <span class="course-fee-val">₹1,60,000</span>
+            </div>
+            <div class="course-actions">
+              <button type="button" class="btn btn-outline btn-sm btn-ask-bot" data-bot-query="What specializations are available in MBA?">
+                <i class="fa-solid fa-robot"></i> Ask Bot
+              </button>
+              <a href="admission.html?course=mba" class="btn btn-primary btn-sm">Apply</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. BBA (Management) -->
+        <article class="course-card" data-category="management">
+          <div class="course-card-header">
+            <div class="course-badges-row">
+              <span class="course-level-badge level-ug">Undergraduate</span>
+              <span class="course-duration-badge"><i class="fa-regular fa-clock"></i> 3 Years (6 Sem)</span>
+            </div>
+            <h3 class="course-title">Bachelor of Business Administration (BBA)</h3>
+          </div>
+          <div class="course-card-body">
+            <p class="course-description">
+              Builds strong fundamentals in corporate finance, organizational behavior, marketing strategy, entrepreneurship, and international business.
+            </p>
+            <div class="course-meta-list">
+              <div class="course-meta-item">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div><strong>Eligibility:</strong> 10+2 Any stream with minimum 50% marks.</div>
+              </div>
+              <div class="course-meta-item">
+                <i class="fa-solid fa-building-columns"></i>
+                <div><strong>Entrance:</strong> Merit Based / Personal Interview</div>
+              </div>
+              <div class="course-meta-item">
+                <i class="fa-solid fa-briefcase"></i>
+                <div><strong>Career Roles:</strong> Business Analyst, Marketing Executive, HR Associate.</div>
+              </div>
+            </div>
+          </div>
+          <div class="course-card-footer">
+            <div class="course-fee-wrap">
+              <span class="course-fee-label">Annual Tuition</span>
+              <span class="course-fee-val">₹90,000</span>
+            </div>
+            <div class="course-actions">
+              <button type="button" class="btn btn-outline btn-sm btn-ask-bot" data-bot-query="Tell me about BBA eligibility, fee and syllabus">
+                <i class="fa-solid fa-robot"></i> Ask Bot
+              </button>
+              <a href="admission.html?course=bba" class="btn btn-primary btn-sm">Apply</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. B.Tech ECE (Engineering) -->
+        <article class="course-card" data-category="engineering">
+          <div class="course-card-header">
+            <div class="course-badges-row">
+              <span class="course-level-badge level-ug">Undergraduate</span>
+              <span class="course-duration-badge"><i class="fa-regular fa-clock"></i> 4 Years (8 Sem)</span>
+            </div>
+            <h3 class="course-title">B.Tech in Electronics & Communication (ECE)</h3>
+          </div>
+          <div class="course-card-body">
+            <p class="course-description">
+              Focuses on VLSI design, embedded microcontrollers, 5G wireless networks, semiconductor technology, and Internet of Things (IoT) hardware.
+            </p>
+            <div class="course-meta-list">
+              <div class="course-meta-item">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div><strong>Eligibility:</strong> 10+2 with PCM minimum 60% aggregate.</div>
+              </div>
+              <div class="course-meta-item">
+                <i class="fa-solid fa-building-columns"></i>
+                <div><strong>Entrance:</strong> JEE Main / State CET / AITMET</div>
+              </div>
+              <div class="course-meta-item">
+                <i class="fa-solid fa-briefcase"></i>
+                <div><strong>Career Roles:</strong> Embedded Engineer, VLSI Design Engineer, Telecom Specialist.</div>
+              </div>
+            </div>
+          </div>
+          <div class="course-card-footer">
+            <div class="course-fee-wrap">
+              <span class="course-fee-label">Annual Tuition</span>
+              <span class="course-fee-val">₹1,20,000</span>
+            </div>
+            <div class="course-actions">
+              <button type="button" class="btn btn-outline btn-sm btn-ask-bot" data-bot-query="Tell me about B.Tech ECE syllabus, fee and placements">
+                <i class="fa-solid fa-robot"></i> Ask Bot
+              </button>
+              <a href="admission.html?course=ece" class="btn btn-primary btn-sm">Apply</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9. M.Tech Cyber Security (Engineering & PG) -->
+        <article class="course-card" data-category="engineering pg">
+          <div class="course-card-header">
+            <div class="course-badges-row">
+              <span class="course-level-badge level-pg">Postgraduate</span>
+              <span class="course-duration-badge"><i class="fa-regular fa-clock"></i> 2 Years (4 Sem)</span>
+            </div>
+            <h3 class="course-title">M.Tech in Cyber Security & Information Defense</h3>
+          </div>
+          <div class="course-card-body">
+            <p class="course-description">
+              Advanced graduate program covering cryptographic protocols, malware forensics, penetration testing, ethical hacking, and network defense.
+            </p>
+            <div class="course-meta-list">
+              <div class="course-meta-item">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div><strong>Eligibility:</strong> B.Tech in CSE/IT/ECE with min 55% marks.</div>
+              </div>
+              <div class="course-meta-item">
+                <i class="fa-solid fa-building-columns"></i>
+                <div><strong>Entrance:</strong> GATE Score / College Entrance Test</div>
+              </div>
+              <div class="course-meta-item">
+                <i class="fa-solid fa-briefcase"></i>
+                <div><strong>Career Roles:</strong> Chief Information Security Officer, Ethical Hacker, Threat Analyst.</div>
+              </div>
+            </div>
+          </div>
+          <div class="course-card-footer">
+            <div class="course-fee-wrap">
+              <span class="course-fee-label">Annual Tuition</span>
+              <span class="course-fee-val">₹1,25,000</span>
+            </div>
+            <div class="course-actions">
+              <button type="button" class="btn btn-outline btn-sm btn-ask-bot" data-bot-query="What is the admission criteria for M.Tech Cyber Security?">
+                <i class="fa-solid fa-robot"></i> Ask Bot
+              </button>
+              <a href="admission.html?course=mtech" class="btn btn-primary btn-sm">Apply</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- No Results Placeholder (Filtered by JS) -->
+      <div id="no-courses-found" style="display: none; text-align: center; padding: 4rem 1rem;">
+        <i class="fa-solid fa-folder-open" style="font-size: 3rem; color: #cbd5e1; margin-bottom: 1rem;"></i>
+        <h3 style="font-size: 1.4rem; color: var(--text-main); margin-bottom: 0.5rem;">No Courses Found</h3>
+        <p style="color: var(--text-muted); max-width: 480px; margin: 0 auto 1.5rem auto;">
+          We couldn't find any courses matching your search criteria. Try a different keyword or ask our AI assistant!
+        </p>
+        <button type="button" class="btn btn-purple" onclick="window.openChatWithQuery('What courses are available?')">
+          <i class="fa-solid fa-robot"></i> Ask AURA AI Assistant
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-brand-title">Apex University (AITM)</h3>
+          <p class="footer-desc">
+            A premier center of technical excellence, multidisciplinary education, and innovative research. Accredited with NAAC 'A++' Grade.
+          </p>
+          <div class="footer-social-row">
+            <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-widget-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Institution</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-chevron-right"></i> Academic Courses</a></li>
+            <li><a href="admission.html"><i class="fa-solid fa-chevron-right"></i> Admission Procedure</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact & Helpdesk</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-widget-title">Flagship Programs</h4>
+          <ul class="footer-links-list">
+            <li><a href="courses.html"><i class="fa-solid fa-chevron-right"></i> B.Tech Computer Science</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-chevron-right"></i> B.Tech AI & Data Science</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-chevron-right"></i> BCA & MCA Programs</a></li>
+            <li><a href="courses.html"><i class="fa-solid fa-chevron-right"></i> MBA Dual Specialization</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-widget-title">Admission Cell</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Apex Knowledge City, Sector 62, Innovation Expressway, Tech Corridor - 400001</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+91 (0) 1800-246-8000 / +91 98765 43210</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>admissions@apextech.edu.in</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>© 2026 Apex Institute of Technology & Management. All Rights Reserved. Demo Final-Year Project.</div>
+        <div>Built with HTML5, CSS3 & Vanilla JavaScript • Compatible with GitHub Pages</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>
